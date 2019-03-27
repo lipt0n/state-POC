@@ -78,4 +78,41 @@
 ### redux-saga
 1. uses generators, it pretty easy to test step by step, but it also feel some kind of useless, 
 it is working, but we have to call .next() on tested generator for every line and pass results of line before into it, it is more like writing same thing twice than like testing reasults .
-1. there are many solutions that can help to test sagas, like redux-saga-test-plan ( https://github.com/jfairbank/redux-saga-test-plan ) 
+1. there are many solutions that can help to test sagas, like redux-saga-test-plan ( https://github.com/jfairbank/redux-saga-test-plan ) that makes testing saga much better, as shown here : https://github.com/lipt0n/state-POC/blob/7bfe13d3836c35501dcb186c77af6a7e8a428271/reduxsaga/src/redux/ducks/steps.test.js#L44
+
+### redux-observable
+???
+
+### mobx
+1. easy and straightforward : https://github.com/lipt0n/state-POC/blob/master/mobxtest/src/store/operators.test.js
+
+
+
+## readability
+### redux
+its fine, with complex projects and a lot of actions creators / selectors / reducers can get a bit messy. 
+
+### redux-sagas
+not bad, generators are pretty straightforward, but with bigger projects tend to get messy, it can be tricky to keep easy to read flow of information, one action can be handled in multiple palaces, sagas can be forked etc... so without proper planning things can easly get out of control.
+
+### redux-observable
+looks jibberish to me, without proper knowledge I'm unable to tell what this part of code is doing
+### mobx 
+clear winner in this category, code looks elegant and simple. Looks like normal javascript objects, but under the hood magic happens - mobx is using proxy to observe / modify everything. Without knowing mobx You can easly tell what is going on in code. 
+## documentation
+### redux
+great, in my opinion it's why redux become popular - it's simple and well documented
+### redux-sagas
+good, everything is very well described
+### redux-observable
+looks jibberish to me, without proper knowledge I'm unable to tell what this part of code is doing
+### mobx 
+very good, well balanced - it have everything I need to start and not too much, so You won't feel overwhelmed
+
+
+## community
+### redux 
+redux is very popular, and ommunity around it is very big, clear winner in this round
+
+### saga
+
