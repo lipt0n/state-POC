@@ -28,7 +28,7 @@
 <td>:star::star::star:</td>
 <td>:star::star::star::star::star:</td>
 <td>:star::star:</td>
-<td>:star:</td>
+<td>none</td>
 <td>:star::star::star:</td>
 </tr>
 <tr>
@@ -37,7 +37,7 @@
 <td>?</td>
 <td>?</td>
 <td>?</td>
-<td>:star:</td>
+<td>none</td>
 <td>:star:</td>
 </tr>
 <tr>
@@ -131,4 +131,20 @@ no debug tools I know of
 ### redux-observable
 no debug tools I know of
 ### mobx 
-1. https://github.com/mobxjs/mobx-devtools 
+1. https://github.com/mobxjs/mobx-devtools  - fine for debuging, not great tho. It is enough but looks pale in comperison to redux dev tools
+2. https://github.com/mobxjs/mobx-react-devtools - similar to first one, but require extra configuration in code
+3. https://github.com/zalmoxisus/mobx-remotedev - would be great, but I was unable to make it work
+
+
+
+
+## learning curve
+
+### redux 
+simple, few hours is enough to be redux expert
+### redux-sagas
+knowledge of js generators is a must, few functions (effects) from sagas is enough to start
+### redux-observable
+very high, require knowledge of RxJS, take a loot of time
+### mobx 
+very easy, reading few concepts from documentation is enought to start using it.
