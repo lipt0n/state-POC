@@ -34,8 +34,8 @@
 <tr>
 <td>redux-observable</td>
 <td>?</td>
-<td>?</td>
-<td>?</td>
+<td>:star:</td>
+<td>:star::star::star::star:</td>
 <td>?</td>
 <td>none</td>
 <td>:star:</td>
