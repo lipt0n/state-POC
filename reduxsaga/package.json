@@ -7,6 +7,7 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "jest-fetch": "^1.1.1",
+    "jest-fetch-mock": "^2.1.1",
     "jest-saga": "^1.0.0",
     "jsplumb": "^2.9.0",
     "jsplumb-react": "0.0.27",
@@ -29,5 +30,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "redux-saga-test-plan": "^4.0.0-beta.2"
+  }
 }

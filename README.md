@@ -71,4 +71,11 @@
 1. most of the mobx code is inside store folder ( https://github.com/lipt0n/state-POC/tree/master/mobxtest/src/store )
 
 
+## testability
+### redux
+1. because redux use pure functions as reducers, and store state in one javascript objects it can't be any easier to test 
 
+### redux-saga
+1. uses generators, it pretty easy to test step by step, but it also feel some kind of useless, 
+it is working, but we have to call .next() on tested generator for every line and pass results of line before into it, it is more like writing same thing twice than like testing reasults .
+1. there are many solutions that can help to test sagas, like redux-saga-test-plan ( https://github.com/jfairbank/redux-saga-test-plan ) 
