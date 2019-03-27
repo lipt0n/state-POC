@@ -1,0 +1,33 @@
+{
+  "name": "base",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-plugin-react-css-modules": "^5.2.3",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "jest-fetch": "^1.1.1",
+    "jest-saga": "^1.0.0",
+    "jsplumb": "^2.9.0",
+    "jsplumb-react": "0.0.27",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-redux": "^6.0.1",
+    "react-scripts": "2.1.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

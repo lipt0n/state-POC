@@ -1,0 +1,213 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`changeStepConfig action creator 1`] = `
+Object {
+  "payload": Object {
+    "config": Object {
+      "increment": 0,
+    },
+    "stepId": 1,
+  },
+  "type": "STEPS:CHANGE",
+}
+`;
+
+exports[`getSteps action creator 1`] = `
+Object {
+  "type": "STEPS:GET",
+}
+`;
+
+exports[`runStep action creator 1`] = `
+Object {
+  "payload": Object {
+    "stepId": 1,
+  },
+  "type": "STEPS:RUN",
+}
+`;
+
+exports[`setSteps action creator 1`] = `
+Object {
+  "payload": Array [
+    Object {
+      "configuration": Array [
+        Object {
+          "value": 1,
+        },
+      ],
+      "id": 0,
+      "inputs": Array [],
+      "last_executed_at": "2019-03-25T21:50:58.643Z",
+      "operator_id": "load_int",
+      "outputs": Array [
+        Object {
+          "value": 1,
+        },
+      ],
+      "status": "up_to_date",
+    },
+    Object {
+      "configuration": Array [
+        Object {
+          "increment": 0,
+        },
+      ],
+      "id": 1,
+      "inputs": Array [
+        Object {
+          "other_step_id": 0,
+          "other_step_type_output_id": "value",
+          "step_type_input_id": "value",
+        },
+      ],
+      "last_executed_at": "2019-03-25T22:00:41.906Z",
+      "operator_id": "increment_int",
+      "outputs": Array [
+        Object {
+          "value": 1,
+        },
+      ],
+      "status": "up_to_date",
+    },
+    Object {
+      "configuration": Array [
+        Object {
+          "increment": 1,
+        },
+      ],
+      "id": 2,
+      "inputs": Array [
+        Object {
+          "other_step_id": 1,
+          "other_step_type_output_id": "value",
+          "step_type_input_id": "value",
+        },
+      ],
+      "last_executed_at": "2019-03-25T22:01:11.145Z",
+      "operator_id": "increment_int",
+      "outputs": Array [
+        Object {
+          "value": 2,
+        },
+      ],
+      "status": "up_to_date",
+    },
+    Object {
+      "configuration": Array [
+        Object {
+          "increment": 0,
+        },
+      ],
+      "id": 3,
+      "inputs": Array [
+        Object {
+          "other_step_id": 2,
+          "other_step_type_output_id": "value",
+          "step_type_input_id": "value",
+        },
+      ],
+      "last_executed_at": "2019-03-25T22:01:13.904Z",
+      "operator_id": "increment_int",
+      "outputs": Array [
+        Object {
+          "value": 2,
+        },
+      ],
+      "status": "up_to_date",
+    },
+  ],
+  "type": "STEPS:SET",
+}
+`;
+
+exports[`stepsReducer 1`] = `
+Array [
+  Object {
+    "configuration": Array [
+      Object {
+        "value": 1,
+      },
+    ],
+    "id": 0,
+    "inputs": Array [],
+    "last_executed_at": "2019-03-25T21:50:58.643Z",
+    "operator_id": "load_int",
+    "outputs": Array [
+      Object {
+        "value": 1,
+      },
+    ],
+    "status": "up_to_date",
+  },
+  Object {
+    "configuration": Array [
+      Object {
+        "increment": 0,
+      },
+    ],
+    "id": 1,
+    "inputs": Array [
+      Object {
+        "other_step_id": 0,
+        "other_step_type_output_id": "value",
+        "step_type_input_id": "value",
+      },
+    ],
+    "last_executed_at": "2019-03-25T22:00:41.906Z",
+    "operator_id": "increment_int",
+    "outputs": Array [
+      Object {
+        "value": 1,
+      },
+    ],
+    "status": "up_to_date",
+  },
+  Object {
+    "configuration": Array [
+      Object {
+        "increment": 1,
+      },
+    ],
+    "id": 2,
+    "inputs": Array [
+      Object {
+        "other_step_id": 1,
+        "other_step_type_output_id": "value",
+        "step_type_input_id": "value",
+      },
+    ],
+    "last_executed_at": "2019-03-25T22:01:11.145Z",
+    "operator_id": "increment_int",
+    "outputs": Array [
+      Object {
+        "value": 2,
+      },
+    ],
+    "status": "up_to_date",
+  },
+  Object {
+    "configuration": Array [
+      Object {
+        "increment": 0,
+      },
+    ],
+    "id": 3,
+    "inputs": Array [
+      Object {
+        "other_step_id": 2,
+        "other_step_type_output_id": "value",
+        "step_type_input_id": "value",
+      },
+    ],
+    "last_executed_at": "2019-03-25T22:01:13.904Z",
+    "operator_id": "increment_int",
+    "outputs": Array [
+      Object {
+        "value": 2,
+      },
+    ],
+    "status": "up_to_date",
+  },
+]
+`;
