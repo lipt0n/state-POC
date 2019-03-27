@@ -114,5 +114,21 @@ very good, well balanced - it have everything I need to start and not too much, 
 ### redux 
 redux is very popular, and ommunity around it is very big, clear winner in this round
 
-### saga
+### redux-sagas
+it's alive
+### redux-observable
+it's alive
+### mobx 
+it's alive
 
+
+## debug tools
+
+### redux 
+great Redux DevTools  (https://github.com/reduxjs/redux-devtools)
+### redux-sagas
+no debug tools I know of
+### redux-observable
+no debug tools I know of
+### mobx 
+1. https://github.com/mobxjs/mobx-devtools 
